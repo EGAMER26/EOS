@@ -1,0 +1,11 @@
+[Fri May 19 13:35:01.087226 2023] [mpm_winnt:notice] [pid 11872:tid 824] AH00455: Apache/2.4.6 (Win32) PHP/5.4.17 configured -- resuming normal operations
+[Fri May 19 13:35:01.087226 2023] [mpm_winnt:notice] [pid 11872:tid 824] AH00456: Apache Lounge VC10 Server built: Jul 16 2013 11:15:41
+[Fri May 19 13:35:01.087226 2023] [core:notice] [pid 11872:tid 824] AH00094: Command line: 'C:\\Users\\evand\\Downloads\\usbwebserver-legalite completo login/apache2/bin/httpd_usbwv8.exe -d C:/Users/evand/Downloads/usbwebserver-legalite completo login/apache2'
+[Fri May 19 13:35:01.092229 2023] [mpm_winnt:notice] [pid 11872:tid 824] AH00418: Parent: Created child process 14872
+[Fri May 19 13:35:01.579109 2023] [mpm_winnt:notice] [pid 14872:tid 4] AH00354: Child: Starting 64 worker threads.
+[Fri May 19 14:53:41.777434 2023] [core:warn] [pid 1436:tid 512] AH00098: pid file C:/Users/evand/Downloads/usbwebserver-legalite completo login/apache2/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Fri May 19 14:53:41.833309 2023] [mpm_winnt:notice] [pid 1436:tid 512] AH00455: Apache/2.4.6 (Win32) PHP/5.4.17 configured -- resuming normal operations
+[Fri May 19 14:53:41.833309 2023] [mpm_winnt:notice] [pid 1436:tid 512] AH00456: Apache Lounge VC10 Server built: Jul 16 2013 11:15:41
+[Fri May 19 14:53:41.833309 2023] [core:notice] [pid 1436:tid 512] AH00094: Command line: 'C:\\Users\\evand\\Downloads\\usbwebserver-legalite completo login/apache2/bin/httpd_usbwv8.exe -d C:/Users/evand/Downloads/usbwebserver-legalite completo login/apache2'
+[Fri May 19 14:53:41.840577 2023] [mpm_winnt:notice] [pid 1436:tid 512] AH00418: Parent: Created child process 468
+[Fri May 19 14:53:42.557901 2023] [mpm_winnt:notice] [pid 468:tid 792] AH00354: Child: Starting 64 worker threads.

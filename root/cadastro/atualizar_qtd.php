@@ -1,7 +1,7 @@
 <?php
-include 'conexao_carrinho.php';
-include 'sistema.php';
-include 'listagem_carrinho';
+include_once ('conexao_carrinho.php');
+include_once  ('sistema.php');
+include_once  ('listagem_carrinho.php');
 
 // Verifica se a conexão foi estabelecida corretamente
 if ($conexao->connect_errno) {
@@ -9,7 +9,7 @@ if ($conexao->connect_errno) {
 }
 
 // Verifica se as variáveis foram enviadas corretamente
-if (isset($_POST['nome_produto']) && isset($_POST['qtd_produto'])) {
+if (isset($_POST['nome_produto']) && isset($_POST['quantidade'])) { 
     // Obtém os valores do formulário
     $nome_produto = $_POST['nome_produto'];
     $quantidade = $_POST['quantidade'];
@@ -19,11 +19,16 @@ if (isset($_POST['nome_produto']) && isset($_POST['qtd_produto'])) {
     $atualizarResultado = $conexao->query($atualizarSql);
 
     if ($atualizarResultado) {
-        // Atualização bem-sucedida
-        echo "Quantidade atualizada com sucesso!";
+        echo "<script>";
+        echo "alert('Produto atualizado!');";
+        echo "window.open('http://localhost:8080/cadastro/listagem_carrinho.php', '_self');";
+        echo "</script>";
     } else {
         // Ocorreu um erro ao atualizar a quantidade
-        echo "Erro ao atualizar a quantidade: " . $conexao->error;
+        echo "<script>";
+        echo "alert('Produto não atualizado!');";
+        echo "window.open('http://localhost:8080/cadastro/listagem_carrinho.php', '_self');";
+        echo "</script>". $conexao->error;
     }
 } else {
     // Variáveis não foram enviadas corretamente

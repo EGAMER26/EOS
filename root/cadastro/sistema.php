@@ -202,7 +202,7 @@
     <p>Preço: R$ 799,00</p>
     <form name="prod1" method="post" action="">
         <!-- Valores do produto -->
-        <input type="hidden" name="nome_produto" value="Air Force 1">
+        <input type="hidden" name="nome_produtoo" value="Air Force 1">
         <input type="hidden" name="preco_produto" value="799.00">
 
         <!-- Quantidade -->
@@ -221,7 +221,7 @@
     <p>Preço: R$ 299,00</p>
     <form name="prod2" method="post" action="">
         <!-- Valores do produto -->
-        <input type="hidden" name="nome_produto" value="Legend Essential">
+        <input type="hidden" name="nome_produtoo" value="Legend Essential">
         <input type="hidden" name="preco_produto" value="299.00">
 
         <!-- Quantidade -->
@@ -240,7 +240,7 @@
     <p>Preço: R$ 899,00</p>
     <form name="prod3" method="post" action="">
         <!-- Valores do produto -->
-        <input type="hidden" name="nome_produto" value="Air Zoom Vapor">
+        <input type="hidden" name="nome_produtoo" value="Air Zoom Vapor">
         <input type="hidden" name="preco_produto" value="899.00">
 
         <!-- Quantidade -->
@@ -259,7 +259,7 @@
     <p>Preço: R$ 399,00</p>
     <form name="pord4" method="post" action="">
         <!-- Valores do produto -->
-        <input type="hidden" name="nome_produto" value="Revolution 6">
+        <input type="hidden" name="nome_produtoo" value="Revolution 6">
         <input type="hidden" name="preco_produto" value="399.00">
 
         <!-- Quantidade -->
@@ -280,7 +280,7 @@
     <p>Preço: R$ 199,00</p>
     <form name="prod5" method="post" action="">
         <!-- Valores do produto -->
-        <input type="hidden" name="nome_produto" value="SB Zoom">
+        <input type="hidden" name="nome_produtoo" value="SB Zoom">
         <input type="hidden" name="preco_produto" value="199.00">
 
         <!-- Quantidade -->

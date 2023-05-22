@@ -35,10 +35,9 @@ if ($resultado) {
                             <td align="center"><?php echo $linha['nome_produto']; ?></td>
                             <td align="center"><?php echo $linha['preco_produto']; ?></td>
                             <td align="center">
-                                <form method="post" action="atualizar_qtd.php">
-                                    <input type="hidden" name="id_produto" value="<?php echo $linha['id_produto']; ?>">
+                                <form method="POST" action="atualizar_qtd.php">
                                     <input type="number" name="quantidade" value="<?php echo $linha['qtd_produto']; ?>" min="1" step="1">
-                                    <input type="submit" value="Atualizar">
+                                    <input type="submit" value="Atualizar" name="update" id="update">
                                 </form>
                             </td>
                             <td align="center">

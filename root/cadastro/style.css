@@ -353,7 +353,7 @@ section p {
   background: #fafafa;
 }
 .subscribe {
-  background: background-image: radial-gradient(circle at 10.2% 57.02%, #f1a240 0, #f79840 7.14%, #fc8c42 14.29%, #ff8045 21.43%, #ff7248 28.57%, #ff624d 35.71%, #ff4f52 42.86%, #ff3858 50%, #fb155f 57.14%, #f60068 64.29%, #ef0072 71.43%, #e7007e 78.57%, #dc008b 85.71%, #d00099 92.86%, #c100a7 100%);
+  background-image: radial-gradient(circle at 10.2% 57.02%, #f1a240 0, #f79840 7.14%, #fc8c42 14.29%, #ff8045 21.43%, #ff7248 28.57%, #ff624d 35.71%, #ff4f52 42.86%, #ff3858 50%, #fb155f 57.14%, #f60068 64.29%, #ef0072 71.43%, #e7007e 78.57%, #dc008b 85.71%, #d00099 92.86%, #c100a7 100%);
   width: 100%;
 }
 

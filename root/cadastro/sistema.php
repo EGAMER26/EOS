@@ -60,7 +60,7 @@
         </li>
       </ul>
       <a class = "navSB" href = "#"><img src = "assets/icn search .icn-xs.png" alt = "busca" /></a>
-      <a class = "navSB" href = "#"
+      <a class = "navSB" href = "http://localhost:8080/cadastro/listagem_carrinho.php"
         ><img
           src = "assets/icn shopping-cart .icn-xs.png"
           alt = "icone carrinho de compra"
@@ -74,6 +74,8 @@
           <button class="buttonGetOut"><a href="sair.php">SAIR</a>
             
           </button>
+
+          
         </nav>
         
     
@@ -133,45 +135,169 @@
            
         </p>
 
+
+
+    <!-- <form method="post"action="listagem_carrinho" >
         <div id="cartoesTenis">
           <div class="productt">
             <img src="assets/tenis1.png"alt="Tênis 1">
             <h3>Nike</h3>
             <p>Air Force 1</p>
             <p>Preço: R$ 799,00</p>
-            <button>Adicionar ao Carrinho</button>
+            <form method="post" action="">
+        <input type="hidden" name="produto_id1" value="1">
+
+        <input type="submit" name="adicionar_carrinho" value="Adicionar ao Carrinho">
+    </form>
           </div>
           <div class="productt">
             <img src="assets/tenis2.png"alt="Tênis 2">
             <h3>Nike</h3>
             <p>Legend Essential</p>
             <p>Preço: R$ 299,99</p>
-            <button>Adicionar ao Carrinho</button>
+            <form method="post" action="">
+        <input type="hidden" name="produto_id2" value="2">
+
+        <input type="submit" name="adicionar_carrinho" value="Adicionar ao Carrinho">
+    </form>
           </div>
           <div class="productt">
             <img src="assets/tenis6.png"alt="Tênis 6">
             <h3>Nike</h3>
             <p>Air Zoom Vapor</p>
             <p>Preço: R$ 500,00</p>
-            <button>Adicionar ao Carrinho</button>
+            <form method="post" action="">
+        <input type="hidden" name="produto_id3" value="3">
+
+        <input type="submit" name="adicionar_carrinho" value="Adicionar ao Carrinho">
+    </form>
           </div>
           <div class="productt">
             <img src="assets/tenis4.png"alt="Tênis 4">
             <h3>Nike</h3>
             <p>Revolution 6</p>
             <p>Preço: R$ 390,00</p>
-            <button>Adicionar ao Carrinho</button>
+            <form method="post" action="">
+        <input type="hidden" name="produto_id4" value="4">
+
+        <input type="submit" name="adicionar_carrinho" value="Adicionar ao Carrinho">
+    </form>
           </div>
           <div class="productt">
             <img src="assets/tenis3.png"alt="Tênis 1">
             <h3>Nike</h3>
-            <p>SB Zoom </p>
+            <p name="">SB Zoom </p>
             <p>Preço: R$ 299,00</p>
-            <button>Adicionar ao Carrinho</button>
+            <form method="post" action="">
+        <input type="hidden" name="produto_id5" value="5">
+
+        <input type="submit" name="adicionar_carrinho" value="Adicionar ao Carrinho">
+    </form> -->
+
+    <div id="cartoesTenis">
+    <div class="productt" id="produto1">
+    <img src="assets/tenis1.png" alt="Tênis 1">
+    <h3>Nike</h3>
+    <p>Air Force 1</p>
+    <p>Preço: R$ 799,00</p>
+    <form name="prod1" method="post" action="">
+        <!-- Valores do produto -->
+        <input type="hidden" name="nome_produto" value="Air Force 1">
+        <input type="hidden" name="preco_produto" value="799.00">
+
+        <!-- Quantidade -->
+        
+        <input type="hidden" name="quantidade_produto" id="quantidade" value="1" min="1">
+
+        <!-- Botão "adicionar ao carrinho" -->
+        <input type="submit" name="adicionar_carrinho" value="Adicionar_ao_carrinho" onclick="document.prod1.action='cadastrar_prod_carrinho.php'">
+    </form>
+</div>
+
+    <div class="productt" id="produto1">
+    <img src="assets/tenis2.png" alt="Tênis 1">
+    <h3>Nike</h3>
+    <p>Legend Essential</p>
+    <p>Preço: R$ 299,00</p>
+    <form name="prod2" method="post" action="">
+        <!-- Valores do produto -->
+        <input type="hidden" name="nome_produto" value="Legend Essential">
+        <input type="hidden" name="preco_produto" value="299.00">
+
+        <!-- Quantidade -->
+        
+        <input type="hidden" name="quantidade_produto" id="quantidade" value="1" min="1">
+
+        <!-- Botão "adicionar ao carrinho" -->
+        <input type="submit" name="adicionar_carrinho" value="Adicionar_ao_carrinho" onclick="document.prod2.action='cadastrar_prod_carrinho.php'">
+    </form>
+</div>
+
+    <div class="productt" id="produto1">
+    <img src="assets/tenis3.png" alt="Tênis 1">
+    <h3>Nike</h3>
+    <p>Air Zoom Vapor</p>
+    <p>Preço: R$ 899,00</p>
+    <form name="prod3" method="post" action="">
+        <!-- Valores do produto -->
+        <input type="hidden" name="nome_produto" value="Air Zoom Vapor">
+        <input type="hidden" name="preco_produto" value="899.00">
+
+        <!-- Quantidade -->
+        
+        <input type="hidden" name="quantidade_produto" id="quantidade" value="1" min="1">
+
+        <!-- Botão "adicionar ao carrinho" -->
+        <input type="submit" name="adicionar_carrinho" value="Adicionar_ao_carrinho" onclick="document.prod3.action='cadastrar_prod_carrinho.php'">
+    </form>
+</div>
+
+    <div class="productt" id="produto1">
+    <img src="assets/tenis4.png" alt="Tênis 1">
+    <h3>Nike</h3>
+    <p>Revolution 6</p>
+    <p>Preço: R$ 399,00</p>
+    <form name="pord4" method="post" action="">
+        <!-- Valores do produto -->
+        <input type="hidden" name="nome_produto" value="Revolution 6">
+        <input type="hidden" name="preco_produto" value="399.00">
+
+        <!-- Quantidade -->
+        
+        <input type="hidden" name="quantidade_produto" id="quantidade" value="1" min="1">
+
+        <!-- Botão "adicionar ao carrinho" -->
+        <input type="submit" name="adicionar_carrinho" value="Adicionar_ao_carrinho" onclick="document.pord4.action='cadastrar_prod_carrinho.php'">
+    </form>
+</div>
+
+    
+
+    <div class="productt" id="produto1">
+    <img src="assets/tenis6.png" alt="Tênis 1">
+    <h3>Nike</h3>
+    <p>SB Zoom</p>
+    <p>Preço: R$ 199,00</p>
+    <form name="prod5" method="post" action="">
+        <!-- Valores do produto -->
+        <input type="hidden" name="nome_produto" value="SB Zoom">
+        <input type="hidden" name="preco_produto" value="199.00">
+
+        <!-- Quantidade -->
+        
+        <input type="hidden" name="quantidade_produto" id="quantidade" value="1" min="1">
+
+        <!-- Botão "adicionar ao carrinho" -->
+        <input type="submit" name="adicionar_carrinho" value="Adicionar_ao_carrinho" onclick="document.prod5.action='cadastrar_prod_carrinho.php'">
+    </form>
+</div>
+
+
           </div>
          
         
-        </div>
+        <!-- </div>
+        </form> -->
       </section>
        <section class = "about"></section>
        <section class = "contact"></section>

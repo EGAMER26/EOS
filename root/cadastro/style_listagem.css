@@ -1,0 +1,50 @@
+:root {
+  
+    font-size: 62.5%;
+  }
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    font-size: 1.6rem;
+    background-color: rgb(148, 12, 12)!important;
+    overflow-y: hidden;
+    position: relative;
+}
+nav {
+    padding-right: 4rem;
+    height: 8rem;
+}
+nav ul {
+    height: 2.5rem;
+}
+
+.carrinho_content {
+    margin-top: 10rem;
+}
+
+footer {
+    position: relative;
+    bottom: -52rem;
+    
+    height: 25rem;
+
+    background-color: black;
+}
+footer .touch a{
+    color: white;
+
+}
+#close_carrinho {   
+    position: absolute;
+    top: 10rem;
+    right: 3rem;
+}
+
+
+
+

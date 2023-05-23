@@ -39,7 +39,7 @@ $result = $stmt->get_result();
 if ($result->num_rows > 0) {
     echo "<script>";
     echo "alert('Email já cadastrado!');";
-    echo "window.open('http://localhost:8081/cadastro/', '_self');";
+    echo "window.open('http://localhost:8080/cadastro/', '_self');";
     echo "</script>";
 } else {
     // insere o novo usuário
@@ -49,7 +49,7 @@ if ($result->num_rows > 0) {
     if ($stmt->execute()) {
         echo "<script>";
         echo "alert('Funcionário cadastrado!');";
-        echo "window.open('http://localhost:8081/cadastro/', '_self');";
+        echo "window.open('http://localhost:8080/cadastro/', '_self');";
         echo "</script>";
     } else {
         echo "<script>";

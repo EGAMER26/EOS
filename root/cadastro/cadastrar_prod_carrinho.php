@@ -2,7 +2,7 @@
 include 'conexao_carrinho.php';
 include 'sistema.php';
 
-$nome_prod = $_POST['nome_produto'];
+$nome_prod = $_POST['nome_produtoo'];
 $preco_prod = $_POST['preco_produto'];
 $qtd_prod = $_POST['quantidade_produto'];
 

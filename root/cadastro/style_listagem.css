@@ -15,35 +15,73 @@ body {
     overflow-y: hidden;
     position: relative;
 }
+/* -------------------------------------NAV------------------------------------- */
 nav {
     padding-right: 4rem;
     height: 8rem;
 }
+/* -------------------------------------NAV------------------------------------- */
 nav ul {
     height: 2.5rem;
 }
 
+/* -------------------------------------FIM-NAV------------------------------------- */
+
+/* -------------------------------------CARRINHO------------------------------------- */
 .carrinho_content {
     margin-top: 10rem;
 }
+#input_add_item_carrinho {
+    height: 2rem;
+    
+    border-radius: 1rem;
+
+}
+#close_carrinho {   
+position: absolute;
+top: 10rem;
+    right: 3rem;
+}
+/* -------------------------------------FIM-CARRINHO------------------------------------- */
+
+/* -------------------------------------TABELA------------------------------------- */
+#table_listagem td {
+    /* margin: 1px solid black; */
+    border: 1px solid black;
+    border-radius: 2rem;
+    padding-block: 2rem;
+    margin-block: 1rem;
+    background-color: white;
+}
+#table_listagem th {
+    /* margin: 1px solid black; */
+    border: 1px solid black;
+    border-radius: 2rem;
+    padding-block: 4rem;
+    margin-block: 1rem;
+
+    background-color: black;
+    color: white;
+}
+
+
+
+/* -------------------------------------FIM-TABELA------------------------------------- */
+/* -------------------------------------FOOTER------------------------------------- */
 
 footer {
     position: relative;
-    bottom: -52rem;
+    bottom: -16rem;
     
     height: 25rem;
-
+    
     background-color: black;
 }
 footer .touch a{
     color: white;
-
+    
 }
-#close_carrinho {   
-    position: absolute;
-    top: 10rem;
-    right: 3rem;
-}
+/* -------------------------------------FIM-FOOTER------------------------------------- */
 
 
 

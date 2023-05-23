@@ -6,7 +6,7 @@ if (isset($_GET['produto_id'])) {
     $produtoId = $_GET['produto_id'];
 
     // Executa a consulta SQL para remover o produto pelo ID
-    $removerSql = "DELETE FROM produtos WHERE id_produto = '$produtoId'";2
+    $removerSql = "DELETE FROM produtos WHERE id_produto = '$produtoId'";
     $removerResultado = $conexao->query($removerSql);
 
     if ($removerResultado) {

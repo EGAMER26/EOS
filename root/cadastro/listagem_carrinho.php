@@ -30,6 +30,24 @@ if ($resultado) {
         <head>
             <link rel="stylesheet" href="style_listagem.css">
             <link rel="stylesheet" href="style.css">
+
+            <link rel = "preconnect" href = "https://fonts.googleapis.com" />
+    <link rel = "preconnect" href = "https://fonts.gstatic.com" crossorigin />
+    <link
+      href = "https://fonts.googleapis.com/css2?family=Martel:wght@700&display=swap"
+      rel  = "stylesheet"
+    />
+    <link rel = "preconnect" href = "https://fonts.googleapis.com" />
+    <link rel = "preconnect" href = "https://fonts.gstatic.com" crossorigin />
+    <link
+      href = "https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel  = "stylesheet"
+    />
+    <link rel  = "preconnect" href                                                   = "https://fonts.googleapis.com">
+    <link rel  = "preconnect" href                                                   = "https://fonts.gstatic.com" crossorigin>
+    <link href = "https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel = "stylesheet">
+    <link rel  = "stylesheet" href                                                   = "https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+
         </head>
         <body>
         <nav  id       = "navigation">
@@ -67,7 +85,7 @@ if ($resultado) {
         </nav>
             <div class="carrinho_content">
                 <center>
-                    <table style="width:900px;">
+                    <table style="width:900px;" id="table_listagem">
                         <tr>
                             <th>PRODUTO</th>
                             <th>PRECO</th>

@@ -210,7 +210,7 @@
         <input type="hidden" name="quantidade_produto" id="quantidade" value="1" min="1">
 
         <!-- Botão "adicionar ao carrinho" -->
-        <input type="submit" name="adicionar_carrinho" value="Adicionar_ao_carrinho" onclick="document.prod1.action='cadastrar_prod_carrinho.php'">
+        <input type="submit" name="adicionar_carrinho" id="input_add_item_carrinho" value="Adicionar ao carrinho" onclick="document.prod1.action='cadastrar_prod_carrinho.php'">
     </form>
 </div>
 
@@ -229,7 +229,7 @@
         <input type="hidden" name="quantidade_produto" id="quantidade" value="1" min="1">
 
         <!-- Botão "adicionar ao carrinho" -->
-        <input type="submit" name="adicionar_carrinho" value="Adicionar_ao_carrinho" onclick="document.prod2.action='cadastrar_prod_carrinho.php'">
+        <input type="submit" name="adicionar_carrinho" id="input_add_item_carrinho" value="Adicionar ao carrinho" onclick="document.prod2.action='cadastrar_prod_carrinho.php'">
     </form>
 </div>
 
@@ -248,7 +248,7 @@
         <input type="hidden" name="quantidade_produto" id="quantidade" value="1" min="1">
 
         <!-- Botão "adicionar ao carrinho" -->
-        <input type="submit" name="adicionar_carrinho" value="Adicionar_ao_carrinho" onclick="document.prod3.action='cadastrar_prod_carrinho.php'">
+        <input type="submit" name="adicionar_carrinho" id="input_add_item_carrinho" value="Adicionar ao carrinho" onclick="document.prod3.action='cadastrar_prod_carrinho.php'">
     </form>
 </div>
 
@@ -267,7 +267,7 @@
         <input type="hidden" name="quantidade_produto" id="quantidade" value="1" min="1">
 
         <!-- Botão "adicionar ao carrinho" -->
-        <input type="submit" name="adicionar_carrinho" value="Adicionar_ao_carrinho" onclick="document.pord4.action='cadastrar_prod_carrinho.php'">
+        <input type="submit" name="adicionar_carrinho" id="input_add_item_carrinho" value="Adicionar ao carrinho" onclick="document.pord4.action='cadastrar_prod_carrinho.php'">
     </form>
 </div>
 
@@ -288,7 +288,7 @@
         <input type="hidden" name="quantidade_produto" id="quantidade" value="1" min="1">
 
         <!-- Botão "adicionar ao carrinho" -->
-        <input type="submit" name="adicionar_carrinho" value="Adicionar_ao_carrinho" onclick="document.prod5.action='cadastrar_prod_carrinho.php'">
+        <input type="submit" name="adicionar_carrinho"  value="Adicionar ao carrinho" onclick="document.prod5.action='cadastrar_prod_carrinho.php'">
     </form>
 </div>
 

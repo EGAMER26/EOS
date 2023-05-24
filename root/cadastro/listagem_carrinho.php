@@ -101,12 +101,12 @@ if ($resultado) {
                                 <td align="center">
                                     <form method="POST" action="atualizar_qtd.php">
                                         <input type="hidden" name="produto_id" value="<?php echo $linha['id_produto']; ?>">
-                                        <input type="number" name="quantidade" value="<?php echo $linha['qtd_produto']; ?>" min="1" step="1">
+                                        <input type="number" width="10px" name="quantidade" value="<?php echo $linha['qtd_produto']; ?>" min="1" step="1">
                                         <input type="submit" value="Atualizar" name="update" id="update">
                                     </form>
                                 </td>
                                 <td align="center">
-                                    <a href="remover_item_carrinho.php?produto_id=<?php echo $linha['id_produto']; ?>">Remover</a>
+                                    <button class="remover_button"><a href="remover_item_carrinho.php?produto_id=<?php echo $linha['id_produto']; ?>">Remover</a></button>
                                 </td>
                             </tr>
                             <?php

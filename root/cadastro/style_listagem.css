@@ -81,7 +81,9 @@ top: 10rem;
     color: rgb(0, 0, 0);
     font-weight: 900;
 }
-
+#table_listagem input {
+    width: 3rem;
+}
 
 
 /* -------------------------------------FIM-TABELA------------------------------------- */

@@ -23,7 +23,7 @@
       href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <title>legalite</title>
-    <!-- <link rel = "stylesheet" href = "style.css" /> -->
+    <link rel = "stylesheet" href = "style_listagem.css" />
     <link rel="stylesheet" href="style.css">
     <link rel = "preconnect" href = "https://fonts.googleapis.com" />
     <link rel = "preconnect" href = "https://fonts.gstatic.com" crossorigin />
@@ -135,65 +135,6 @@
            
         </p>
 
-
-
-    <!-- <form method="post"action="listagem_carrinho" >
-        <div id="cartoesTenis">
-          <div class="productt">
-            <img src="assets/tenis1.png"alt="Tênis 1">
-            <h3>Nike</h3>
-            <p>Air Force 1</p>
-            <p>Preço: R$ 799,00</p>
-            <form method="post" action="">
-        <input type="hidden" name="produto_id1" value="1">
-
-        <input type="submit" name="adicionar_carrinho" value="Adicionar ao Carrinho">
-    </form>
-          </div>
-          <div class="productt">
-            <img src="assets/tenis2.png"alt="Tênis 2">
-            <h3>Nike</h3>
-            <p>Legend Essential</p>
-            <p>Preço: R$ 299,99</p>
-            <form method="post" action="">
-        <input type="hidden" name="produto_id2" value="2">
-
-        <input type="submit" name="adicionar_carrinho" value="Adicionar ao Carrinho">
-    </form>
-          </div>
-          <div class="productt">
-            <img src="assets/tenis6.png"alt="Tênis 6">
-            <h3>Nike</h3>
-            <p>Air Zoom Vapor</p>
-            <p>Preço: R$ 500,00</p>
-            <form method="post" action="">
-        <input type="hidden" name="produto_id3" value="3">
-
-        <input type="submit" name="adicionar_carrinho" value="Adicionar ao Carrinho">
-    </form>
-          </div>
-          <div class="productt">
-            <img src="assets/tenis4.png"alt="Tênis 4">
-            <h3>Nike</h3>
-            <p>Revolution 6</p>
-            <p>Preço: R$ 390,00</p>
-            <form method="post" action="">
-        <input type="hidden" name="produto_id4" value="4">
-
-        <input type="submit" name="adicionar_carrinho" value="Adicionar ao Carrinho">
-    </form>
-          </div>
-          <div class="productt">
-            <img src="assets/tenis3.png"alt="Tênis 1">
-            <h3>Nike</h3>
-            <p name="">SB Zoom </p>
-            <p>Preço: R$ 299,00</p>
-            <form method="post" action="">
-        <input type="hidden" name="produto_id5" value="5">
-
-        <input type="submit" name="adicionar_carrinho" value="Adicionar ao Carrinho">
-    </form> -->
-
     <div id="cartoesTenis">
     <div class="productt" id="produto1">
     <img src="assets/tenis1.png" alt="Tênis 1">
@@ -288,7 +229,7 @@
         <input type="hidden" name="quantidade_produto" id="quantidade" value="1" min="1">
 
         <!-- Botão "adicionar ao carrinho" -->
-        <input type="submit" name="adicionar_carrinho"  value="Adicionar ao carrinho" onclick="document.prod5.action='cadastrar_prod_carrinho.php'">
+        <input type="submit" name="adicionar_carrinho" id="input_add_item_carrinho" value="Adicionar ao carrinho" onclick="document.prod5.action='cadastrar_prod_carrinho.php'">
     </form>
 </div>
 

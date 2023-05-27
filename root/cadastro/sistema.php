@@ -98,7 +98,7 @@
     </header>
     <main    id    = "product">
     <section class = "practice">
-        <h2>
+        <h2 style="color:white;">
           Principais marcas
         </h2>
         <p>

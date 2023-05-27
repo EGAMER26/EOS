@@ -45,6 +45,10 @@ nav ul {
     border-radius: 1rem;
 
 }
+#input_add_item_carrinho:hover {
+    transform: scale(1.1);
+    transition: 500ms;
+}
 #close_carrinho {   
 position: absolute;
 top: 10rem;

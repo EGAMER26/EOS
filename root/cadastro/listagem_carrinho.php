@@ -331,7 +331,6 @@ elseif ($resultado || $numRows > 1 ) {
           <a onclick = "menuShoww()" id = "acontact" href = "#contact">Contatos</a>
         </li>
       </ul>
-      <a class = "navSB" href = "#"><img src = "assets/icn search .icn-xs.png" alt = "busca" /></a>
       <a class = "navSB" href = "http://localhost:8080/cadastro/listagem_carrinho.php"
         ><img
           src = "assets/icn shopping-cart .icn-xs.png"

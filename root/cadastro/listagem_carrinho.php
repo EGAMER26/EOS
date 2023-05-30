@@ -18,7 +18,9 @@ if ($conexao->connect_errno) {
 }
 
 // Consulta SQL para obter os dados do carrinho
-$sql = "SELECT * FROM produtos";
+$emailUsuarioLogado = $_SESSION['email'];
+
+$sql = "SELECT * FROM produtos WHERE id_usuario = '$emailUsuarioLogado'";
 
 // Executa a consulta
 $resultado = $conexao->query($sql);

@@ -6,6 +6,7 @@ include 'sistema.php';
 $id_usuario = $_POST['id_usuario'];
 $nome_prod = $_POST['nome_produtoo'];
 $preco_prod = $_POST['preco_produto'];
+$preco_prod_total = $_POST['preco_total'];
 $qtd_prod = $_POST['quantidade_produto'];
 $emailUsuarioLogado = $_SESSION['email'];
 
@@ -21,7 +22,7 @@ if (mysqli_num_rows($resultado) > 0) {
     echo "window.open('http://localhost:8080/cadastro/sistema.php', '_self');";
     echo "</script>";
 } else {
-    $sql = "INSERT INTO produtos (id_usuario, nome_produto, preco_produto, qtd_produto) VALUES ('$id_usuario' ,'$nome_prod', '$preco_final', '$qtd_prod')";
+    $sql = "INSERT INTO produtos (id_usuario, nome_produto, preco_produto, qtd_produto, preco_total) VALUES ('$id_usuario' ,'$nome_prod', '$preco_final', '$qtd_prod', '$preco_prod_total')";
     if (mysqli_query($conexao, $sql)) {
         echo "<script>";
         echo "alert('Produto cadastrado!');";

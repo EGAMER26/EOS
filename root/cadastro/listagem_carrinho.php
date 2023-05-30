@@ -356,6 +356,7 @@ elseif ($resultado || $numRows > 1 ) {
                             <th>PRODUTO</th>
                             <th>PRECO</th>
                             <th>QUANTIDADE</th>
+                            <th>TOTAL</th>
                             <th>ACAO</th>
                         </tr>
                         <?php
@@ -372,6 +373,7 @@ elseif ($resultado || $numRows > 1 ) {
                                         <input type="submit" value="Atualizar" name="update" id="update">
                                     </form>
                                 </td>
+                                <td align="center"><?php echo $linha['preco_total']; ?></td>
                                 <td align="center">
                                     <button class="remover_button"><a href="remover_item_carrinho.php?produto_id=<?php echo $linha['id_produto']; ?>">Remover</a></button>
                                 </td>

@@ -14,7 +14,7 @@ if (isset($_POST['update'])) {
     $preco_final = $preco_prod * $quantidade;
 
     // Atualiza a quantidade no banco de dados
-    $atualizarSql = "UPDATE produtos SET qtd_produto = '$quantidade', preco_produto = '$preco_final'  WHERE id_produto = '$produtoId'";
+    $atualizarSql = "UPDATE produtos SET qtd_produto = '$quantidade', preco_total = '$preco_final'  WHERE id_produto = '$produtoId'";
     $atualizarResultado = $conexao->query($atualizarSql);
 
     if ($atualizarResultado) {

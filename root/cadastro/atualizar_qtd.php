@@ -15,10 +15,7 @@ if (isset($_POST['update'])) {
     $atualizarResultado = $conexao->query($atualizarSql);
 
     if ($atualizarResultado) {
-        echo "<script>";
-        echo "alert('Produto atualizado!');";
-        echo "window.open('listagem_carrinho.php', '_self');";
-        echo "</script>";
+        header('Location: listagem_carrinho.php');
     } else {
         echo "<script>";
         echo "alert('Erro ao atualizar o produto!');";

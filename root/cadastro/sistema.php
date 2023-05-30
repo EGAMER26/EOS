@@ -227,6 +227,7 @@
         <!-- Botão "adicionar ao carrinho" -->
         <input type="submit" name="adicionar_carrinho" id="input_add_item_carrinho" value="Adicionar ao carrinho" onclick="document.pord4.action='cadastrar_prod_carrinho.php'">
     </form>
+    
 </div>
 
     

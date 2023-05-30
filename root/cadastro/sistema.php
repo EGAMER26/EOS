@@ -169,6 +169,7 @@
         <!-- Valores do produto -->
         <input type="hidden" name="nome_produtoo" value="Legend Essential">
         <input type="hidden" name="preco_produto" value="299.00">
+        <input type="hidden" name="preco_total" value="299.00">
 
         <!-- Quantidade -->
         
@@ -191,6 +192,7 @@
         <!-- Valores do produto -->
         <input type="hidden" name="nome_produtoo" value="Air Zoom Vapor">
         <input type="hidden" name="preco_produto" value="899.00">
+        <input type="hidden" name="preco_total" value="899.00">
 
         <!-- Quantidade -->
         
@@ -213,6 +215,7 @@
         <!-- Valores do produto -->
         <input type="hidden" name="nome_produtoo" value="Revolution 6">
         <input type="hidden" name="preco_produto" value="399.00">
+        <input type="hidden" name="preco_total" value="399.00">
 
         <!-- Quantidade -->
         
@@ -237,6 +240,7 @@
         <!-- Valores do produto -->
         <input type="hidden" name="nome_produtoo" value="SB Zoom">
         <input type="hidden" name="preco_produto" value="199.00">
+        <input type="hidden" name="preco_total" value="199.00">
 
         <!-- Quantidade -->
         

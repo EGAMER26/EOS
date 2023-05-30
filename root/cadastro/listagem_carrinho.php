@@ -367,6 +367,7 @@ elseif ($resultado || $numRows > 1 ) {
                                 <td align="center">
                                     <form method="POST" action="atualizar_qtd.php">
                                         <input type="hidden" name="produto_id" value="<?php echo $linha['id_produto']; ?>">
+                                        <input type="hidden" name="preco_produto" value="<?php echo $linha['preco_produto']; ?>"> 
                                         <input type="number" width="10px" name="quantidade" value="<?php echo $linha['qtd_produto']; ?>" min="1" step="1">
                                         <input type="submit" value="Atualizar" name="update" id="update">
                                     </form>

@@ -10,8 +10,11 @@ if (isset($_POST['update'])) {
     $produtoId = $_POST['produto_id'];
     $quantidade = $_POST['quantidade'];
 
+    $preco_prod = $_POST['preco_produto'];
+    $preco_final = $preco_prod * $quantidade;
+
     // Atualiza a quantidade no banco de dados
-    $atualizarSql = "UPDATE produtos SET qtd_produto = '$quantidade' WHERE id_produto = '$produtoId'";
+    $atualizarSql = "UPDATE produtos SET qtd_produto = '$quantidade', preco_produto = '$preco_final'  WHERE id_produto = '$produtoId'";
     $atualizarResultado = $conexao->query($atualizarSql);
 
     if ($atualizarResultado) {

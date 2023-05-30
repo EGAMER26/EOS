@@ -74,6 +74,8 @@ nav {
   z-index: 4;
   background: white;
   transition: 400ms;
+
+  padding-right: 3rem;
 }
 nav ul {
   display: flex;
@@ -1067,17 +1069,26 @@ color: white;
 	margin-bottom: 10px;
 }
 
-.productt button {
-	background-color: #4CAF50;
-	color: #fff;
-	padding: 10px 20px;
-	border: none;
-	border-radius: 5px;
-	cursor: pointer;
-}
+#input_add_item_carrinho {
+  height: 4rem;
+  width: 18rem;
 
-.productt button:hover {
-	background-color: #3e8e41;
+  background-color: green;
+  border: none;
+
+  box-shadow:inset 0 3 1rem black;
+
+  color: white;
+  
+  border-radius: 1rem;
+
+}
+#input_add_item_carrinho:hover {
+  transform: scale(1.1);
+  transition: 500ms;
+}
+#input_add_item_carrinho a {
+  color: white;
 }
   /* -----------------TESTE1 fim---------------- */
 

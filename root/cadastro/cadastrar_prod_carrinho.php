@@ -1,5 +1,5 @@
 <?php
-include 'conexao_carrinho.php';
+include 'conexao_banco_eos.php';
 include 'sistema.php';
 
 $nome_prod = $_POST['nome_produtoo'];

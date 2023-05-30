@@ -1,5 +1,5 @@
 <?php
-include 'conexao_carrinho.php';
+include 'conexao_banco_eos.php';
 
 // Verifica se o parâmetro do ID do produto foi recebido
 if (isset($_GET['produto_id'])) {

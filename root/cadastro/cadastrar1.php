@@ -1,7 +1,7 @@
 <?php 
 
 // conecta ao banco de dados
-$conn = new mysqli('127.0.0.1', 'root', 'usbw', 'usuarios');
+$conn = new mysqli('127.0.0.1', 'root', 'usbw', 'banco_eos');
 
 // verifica se houve erro na conexão
 if ($conn->connect_error) {

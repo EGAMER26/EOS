@@ -10,7 +10,7 @@
     $logado = $_SESSION['email'];
 ?>
 <?php
-include 'conexao_carrinho.php';
+include 'conexao_banco_eos.php';
 
 // Verifica se a conexão foi estabelecida corretamente
 if ($conexao->connect_errno) {

@@ -945,7 +945,7 @@ color: white;
 
 
 .overflowY {
-  overflow-y: hidden;
+  /* overflow-y: hidden; */
 }
 
 .closeOpenLogin {

@@ -56,6 +56,27 @@ top: 10rem;
 }
 /* -------------------------------------FIM-CARRINHO------------------------------------- */
 
+/* -------------------------------------TOTAL------------------------------------- */
+.total {
+    display: flex;
+    flex-direction: column;
+
+    position: absolute;
+    top: 12rem;
+    right: 9rem;
+
+    background-color: black;
+    border-radius: 2rem;
+}
+.content_total {
+    margin-top: 1rem;
+    color: white;
+}
+.content_total p {
+    box-shadow: 0 0 1rem white;
+}
+/* -------------------------------------FIM-TOTAL------------------------------------- */
+
 /* -------------------------------------TABELA------------------------------------- */
 #table_listagem td {
     /* margin: 1px solid black; */

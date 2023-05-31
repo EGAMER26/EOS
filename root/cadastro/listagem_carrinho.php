@@ -382,7 +382,13 @@ elseif ($resultado || $numRows > 1 ) {
                     </table>
                 </center>
             </div>
-           <button id="close_carrinho"><a href="sistema.php"><svg width="25" height="25" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+           <div class="total">
+            <div class="content_total">
+              <h3>total</h3>
+                <p>ola</p>
+            </div>
+           </div>
+            <button id="close_carrinho"><a href="sistema.php"><svg width="25" height="25" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M19 19L1 1M19.0001 1L1 19.0001" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 </a></button>

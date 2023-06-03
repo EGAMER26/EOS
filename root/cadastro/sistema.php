@@ -449,23 +449,7 @@
           <button>Instagram</button>
         </div>
       </div>
-      <div class = "request">
-      <div class = "requesth2">
-
-          <h2>
-            Request A Free 
-            Consultation
-          </h2>
-          <p>
-            the quick fox jumps over 
-            the lazy dog
-          </p>
-        </div>
-        <div class = "requestButon">
-
-          <button><a href = "#">Contact Us</a></button>
-        </div>
-      </div>
+      
     </section> 
     <footer>
       <header>

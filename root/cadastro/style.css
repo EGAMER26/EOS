@@ -131,7 +131,8 @@ nav .menu-btn {
   
 }
 .buttonGetOut a {
-  color: #d0a144;
+  color: #000000;
+  font-weight: 900;
 
 }
 /* ------------------HEADER------------------ */
@@ -262,7 +263,7 @@ section p {
 }
 /* ------------------PRACTICE------------------ */
 .advice {
-  height: 189.8rem;
+  height: 100%;
   width: 100%;
   background-color: #f3f3f3;
 }
@@ -306,7 +307,6 @@ section p {
   padding-inline: 4.25rem;
   padding-bottom: 12.25rem;
   position: relative;
-  top: -20px;
   height: 100%;
 }
 
@@ -393,6 +393,7 @@ label button {
 #contact {
   background: #f3f3f3;
   padding-inline: 4.35rem;
+ height: 80rem;
 }
 /* ------CONTACT_CARDS_1------- */
 .cardsContact {
@@ -1038,7 +1039,7 @@ color: white;
     display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	margin: 20px;
+	/* margin: 20px; */
   /* margin-bottom: 10rem; */
   }
   .productt {
@@ -1127,66 +1128,7 @@ color: white;
     margin: 0;
   }
 
-  /* -----------------ADVICE---------------- */
-#product .advice {
-  height: 100%;
-}
-#product .advice h3 {
-  text-align: left;
-  padding-inline: 3rem;
-  font-size: 1.6rem;
-  margin-block: 3rem 1.5rem;
-
-}
-#frauds{
-  width: 230px;
-}
-
-#product .advice h2 {
-  width: 60rem;
-}
-#product .advice p {
-width: 70rem;
-}
-html body #product .cartao {
-width: 23rem;
-border-radius: 8px;
-display: flex;
-justify-content: center;
-align-items: center;
-}
-html body #product .cartao img,
-html body #product .cartao3 img {
-  border-radius: 0 0 8px 8px;
-  top: 0;
-  bottom: 0;
-}
-#product .cartao p {
-  width: 25rem;
-  text-align: left;
-  padding-inline: 3rem;
-  margin-block: 0 3rem;
-}
-#product .a {
-  position: relative;
-  top: 2.1rem;
-}
-#product .q {
-  bottom: 3.5rem;
-}
-#product .advice .cartoes .cartao1 p {
   
-  margin-block: 4rem 2.9rem;
-}
-
-#product .cartoes {
-  height: 32.2rem;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  gap: 3rem;
-  width: 80%;
-}
   /* -----------------about---------------- */
   #about {
     /* margin-top: 50rem; */

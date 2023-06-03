@@ -89,7 +89,9 @@ nav ul li a {
   letter-spacing: 1px;
   z-index: 4;
   transition: all 0.4s ease;
-  color: #d0a144;
+  color: rgb(0, 0, 0);
+
+  font-weight: 900;
 }
 #navigation a img {
   margin-inline: 0;

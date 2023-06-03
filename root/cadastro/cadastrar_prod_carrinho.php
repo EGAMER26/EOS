@@ -24,6 +24,16 @@ if (mysqli_num_rows($resultado) > 0) {
 } else {
     $sql = "INSERT INTO produtos (id_usuario, nome_produto, preco_produto, qtd_produto, preco_total) VALUES ('$id_usuario' ,'$nome_prod', '$preco_final', '$qtd_prod', '$preco_prod_total')";
     if (mysqli_query($conexao, $sql)) {
+        $emailUsuarioLogado = $_SESSION['email'];
+        $query = "SELECT SUM(preco_total) AS preco_total_produtos FROM produtos WHERE id_usuario = '$emailUsuarioLogado'";
+
+        $stmt = $conexao->prepare($query);
+        $stmt->execute();
+        $resultado = $stmt->get_result();
+        $row = $resultado->fetch_assoc();
+
+        $valorTotalProdutos = $row['preco_total_produtos'];
+        $_SESSION['preco_total_produtos'] = $valorTotalProdutos;
         echo "<script>";
         echo "alert('Produto cadastrado!');";
         echo "window.open('http://localhost:8080/cadastro/listagem_carrinho.php', '_self');";

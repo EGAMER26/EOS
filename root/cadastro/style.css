@@ -83,6 +83,11 @@ nav ul {
   list-style: none;
   z-index: 4;
   gap: 2.4rem;
+
+  
+}
+#nav_ul ul{
+  padding-right: 0!important;
 }
 nav ul li a {
   padding: 8px 15px;
@@ -146,7 +151,7 @@ p {
   font-size: 2rem;
   color: #737373;
   margin: 3.5rem auto;
-  width: 205px;
+  width: 35rem;
 }
 .get {
   display: block;
@@ -158,6 +163,9 @@ p {
   font-weight: 700;
   background: #784f33;
   border-radius: 37px;
+}
+.span_vermelho {
+  color: white;
 }
 .learn {
   display: block;

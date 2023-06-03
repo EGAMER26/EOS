@@ -8,6 +8,9 @@
         header('Location: login.php');
     }
     $logado = $_SESSION['email'];
+    $valorTotalProdutos = $_SESSION['preco_total_produtos'];
+    $valorFormatado = number_format($valorTotalProdutos, 2, ',', '.');
+    $comCifrao = 'R$ ' . $valorFormatado;
 ?>
 <?php
 include 'conexao_banco_eos.php';
@@ -367,8 +370,8 @@ elseif ($resultado || $numRows > 1 ) {
                                     <form method="POST" action="atualizar_qtd.php">
                                         <input type="hidden" name="produto_id" value="<?php echo $linha['id_produto']; ?>">
                                         <input type="hidden" name="preco_produto" value="<?php echo $linha['preco_produto']; ?>"> 
-                                        <input type="number" width="10px" name="quantidade" value="<?php echo $linha['qtd_produto']; ?>" min="1" step="1">
-                                        <input type="submit" value="Atualizar" name="update" id="update">
+                                        <input type="number" class="qtd" name="quantidade" value="<?php echo $linha['qtd_produto']; ?>" min="1" step="1">
+                                        <input type="submit"  value="Atualizar" name="update" id="atualizar">
                                     </form>
                                 </td>
                                 <td align="center"><?php echo $linha['preco_total']; ?></td>
@@ -384,8 +387,8 @@ elseif ($resultado || $numRows > 1 ) {
             </div>
            <div class="total">
             <div class="content_total">
-              <h3>total</h3>
-                <p>ola</p>
+              <h3>TOTAL</h3>
+              <p> <?php echo $comCifrao; ?></p>
             </div>
            </div>
             <button id="close_carrinho"><a href="sistema.php"><svg width="25" height="25" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">

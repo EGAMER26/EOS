@@ -8,6 +8,7 @@
         header('Location: login.php');
     }
     $logado = $_SESSION['email'];
+
 ?>
 
 
@@ -23,7 +24,6 @@
       href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <title>legalite</title>
-    <!-- <link rel = "stylesheet" href = "style_listagem.css" /> -->
     <link rel="stylesheet" href="style.css">
     <link rel = "preconnect" href = "https://fonts.googleapis.com" />
     <link rel = "preconnect" href = "https://fonts.gstatic.com" crossorigin />
@@ -253,8 +253,6 @@
           </div>
          
         
-        <!-- </div>
-        </form> -->
       </section>
        <section class = "about"></section>
        <section class = "contact"></section>
@@ -644,7 +642,7 @@
     </footer>
     <a class = "gotopbtn" href = "#"> <i class = "fas fa-arrow-up"></i> </a>
 
-    <!-- <script src  = "https://unpkg.com/scrollreveal"></script> -->
+    <script src  = "https://unpkg.com/scrollreveal"></script>
     <script type = "text/javascript" src = "main.js"></script>
     
   </body>

@@ -15,20 +15,16 @@
 <?php
 include 'conexao_banco_eos.php';
 
-// Verifica se a conexão foi estabelecida corretamente
 if ($conexao->connect_errno) {
     die("Falha na conexão com o banco de dados: " . $conexao->connect_error);
 }
 
-// Consulta SQL para obter os dados do carrinho
 $emailUsuarioLogado = $_SESSION['email'];
 
 $sql = "SELECT * FROM produtos WHERE id_usuario = '$emailUsuarioLogado'";
 
-// Executa a consulta
 $resultado = $conexao->query($sql);
 $numRows = mysqli_num_rows($resultado);
-// Verifica se a consulta foi executada com sucesso
 if ($numRows == 0){
   ?>
   <html>
@@ -391,6 +387,7 @@ elseif ($resultado || $numRows > 1 ) {
               <p> <?php echo $comCifrao; ?></p>
             </div>
            </div>
+           <button id="finalizar_compra">FINALIZAR COMPRA</button>
             <button id="close_carrinho"><a href="sistema.php"><svg width="25" height="25" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M19 19L1 1M19.0001 1L1 19.0001" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
@@ -595,6 +592,5 @@ else {
     echo "Erro ao obter os dados do carrinho " . $conexao->error;
 }
 
-// Fecha a conexão com o banco de dados
 $conexao->close();
 ?>

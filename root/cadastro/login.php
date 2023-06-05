@@ -70,21 +70,12 @@
                 </label>
                 
                 <label for="confirm_password">
-                  <!-- <div class = "senha"> -->
                             
                             <input type = "password" name="txt_senha" maxlength = "50" id = "confirm_password" placeholder = "senha..." required>
-                  <!-- </div> -->
                 </label>
                 <input type="submit" value="Cadastrar" id="inputCadatro" style="margin: 0; width: 20rem; display: flex; justify-content: center; align-items: center;" onclick="document.form_cliente.action='cadastrar1.php'">
               </form>
-                <!-- <div class = "gender">
-                <div class = "genero"><input type = "radio" name = "masculino"><p>Masculino</p></div>
-                <div class = "genero"><input type = "radio" name = "feminino"><p>Feminino</p></div>
-                                </div> -->
-                                <!-- <div class = "idade gender">
-                                    <h4>Idade</h4>
-                                  <input type = "number" min = "1" max = "100" value = "" size"20" maxlength = "20">
-                                </div> -->
+                
                 </div>
               
               

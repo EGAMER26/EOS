@@ -2,11 +2,9 @@
 include 'conexao_banco_eos.php';
 session_start();
 
-// Verifica se o parâmetro do ID do produto foi recebido
 if (isset($_GET['produto_id'])) {
     $produtoId = $_GET['produto_id'];
 
-    // Executa a consulta SQL para remover o produto pelo ID
     $removerSql = "DELETE FROM produtos WHERE id_produto = '$produtoId'";
     $removerResultado = $conexao->query($removerSql);
 
@@ -33,6 +31,5 @@ if (isset($_GET['produto_id'])) {
     }
 }
 
-// Fecha a conexão com o banco de dados
 $conexao->close();
 ?>

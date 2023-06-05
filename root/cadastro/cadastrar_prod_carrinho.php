@@ -1,4 +1,6 @@
 <?php
+  session_start();
+
 include 'conexao_banco_eos.php';
 include 'sistema.php';
 
@@ -8,12 +10,13 @@ $nome_prod = $_POST['nome_produtoo'];
 $preco_prod = $_POST['preco_produto'];
 $preco_prod_total = $_POST['preco_total'];
 $qtd_prod = $_POST['quantidade_produto'];
-$emailUsuarioLogado = $_SESSION['email'];
+
+$email_logado = $_SESSION['email'];
 
 $preco_final = $preco_prod * $qtd_prod;
 
 
-$sql = "SELECT * FROM produtos WHERE nome_produto='$nome_prod' && WHERE id_usuario = '$emailUsuarioLogado'";
+$sql = "SELECT * FROM produtos WHERE nome_produto='$nome_prod' AND id_usuario = '$email_logado'";
 $resultado = mysqli_query($conexao, $sql);
 
 if (mysqli_num_rows($resultado) > 0) {
@@ -24,8 +27,8 @@ if (mysqli_num_rows($resultado) > 0) {
 } else {
     $sql = "INSERT INTO produtos (id_usuario, nome_produto, preco_produto, qtd_produto, preco_total) VALUES ('$id_usuario' ,'$nome_prod', '$preco_final', '$qtd_prod', '$preco_prod_total')";
     if (mysqli_query($conexao, $sql)) {
-        $emailUsuarioLogado = $_SESSION['email'];
-        $query = "SELECT SUM(preco_total) AS preco_total_produtos FROM produtos WHERE id_usuario = '$emailUsuarioLogado'";
+        $email_logado = $_SESSION['email'];
+        $query = "SELECT SUM(preco_total) AS preco_total_produtos FROM produtos WHERE id_usuario = '$email_logado'";
 
         $stmt = $conexao->prepare($query);
         $stmt->execute();

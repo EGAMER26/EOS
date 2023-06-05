@@ -2,7 +2,6 @@
 session_start();
 include 'conexao_banco_eos.php';
 
-// Verifica se a conexão foi estabelecida corretamente
 if ($conexao->connect_errno) {
     die("Falha na conexão com o banco de dados: " . $conexao->connect_error);
 }
@@ -14,12 +13,10 @@ if (isset($_POST['update'])) {
     $preco_prod = $_POST['preco_produto'];
     $preco_final = $preco_prod * $quantidade;
 
-    // Atualiza a quantidade no banco de dados
     $atualizarSql = "UPDATE produtos SET qtd_produto = '$quantidade', preco_total = '$preco_final'  WHERE id_produto = '$produtoId'";
     $atualizarResultado = $conexao->query($atualizarSql);
 
     if ($atualizarResultado) {
-        // Consulta SQL para obter o valor total dos produtos
         $emailUsuarioLogado = $_SESSION['email'];
         $query = "SELECT SUM(preco_total) AS preco_total_produtos FROM produtos WHERE id_usuario = '$emailUsuarioLogado'";
 
@@ -30,7 +27,6 @@ if (isset($_POST['update'])) {
 
         $valorTotalProdutos = $row['preco_total_produtos'];
         $_SESSION['preco_total_produtos'] = $valorTotalProdutos;
-        // echo $valorTotalProdutos;
 
         header('Location: listagem_carrinho.php');
     } else {
@@ -41,6 +37,5 @@ if (isset($_POST['update'])) {
     }
 }
 
-// Fecha a conexão com o banco de dados
 $conexao->close();
 ?>

@@ -6,10 +6,5 @@ $banco="banco_eos";
 
 $conexao = new mysqli($servidor, $usuario, $senha, $banco);
 
-// if($conexao->connect_errno){
-//     echo "erro";
-// } else {
-//     echo "success";
 
-// }
 ?> 

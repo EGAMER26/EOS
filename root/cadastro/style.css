@@ -165,7 +165,7 @@ p {
   border-radius: 37px;
 }
 .span_vermelho {
-  color: white;
+  color: #ab1717;
 }
 .learn {
   display: block;
@@ -321,6 +321,7 @@ section p {
 #about h2 {
   padding-top: 9.3rem;
   color: black;
+  width: 70rem;
 }
 
 #about p {

@@ -260,7 +260,7 @@
        <section class = "contact"></section>
     </main>
     <section id = "about">
-      <h2>Quem nós somos</h2>
+    <h2>Nosso Diferencial</h2>
       <p>
      
       </p>
@@ -276,7 +276,8 @@
       <div class = "container_Content">
 
       
-      <h2>Os melhores produtos</h2>
+      <h2>As melhores condições de compra</h2>
+
       <p>
         
       </p>

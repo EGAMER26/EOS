@@ -1315,17 +1315,172 @@ margin-bottom: 15.5rem
 
 @media (max-width: 800px) {
   body {
-    background-color: white;
+    background-color: rgb(0, 0, 0);
+
+    
+  }
+  body img {
+    width: 100%;
   }
   nav {
       display: none;
   }
-  
+  /* ---------------------------header----------------------- */
   header {
-      display: flex;
-      flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    
+    width: 100%;
+    padding: 9rem 3rem;
+    
+    justify-content: center;
+    align-items: center;
+
+    background: url("assets/main_background.jpg") no-repeat;
+  }
+  .picture {
+    max-width: 100%;
+    object-fit: contain;
+  }
+  /* ---------------------------fim-header----------------------- */
+  
+  /* ---------------------------practice----------------------- */
+  .practice {
+    display: flex;
+    flex-direction: column;
+
+    padding-block: 9rem;
+  }
+  .practice h2 {
+    padding-block: 0 9rem;
+  }
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 5rem;
+  }
+  .cards img {
+    width: 80%;
+  }
+  .card {
+    display: flex;
+    width: 20rem;
+    height: 20rem;
+    
+    background-color: rgb(255, 255, 255);
+
+    border-radius: 2rem;
+  }
+  .card img {
+    width: 80%;
+    
   }
   
-  }
+  /* ---------------------------fim-practice----------------------- */
+
+/* -----------------cards_tenis---------------- */
+
+.advice h2 {
+  color: white;
+}
+
+#cartoesTenis {
+  display: flex;
+flex-wrap: wrap;
+justify-content: center;
+/* margin: 20px; */
+/* margin-bottom: 10rem; */
+}
+.productt {
+width: 300px;
+height: 500px;
+margin: 20px;
+background-color: #f9f9f9;
+border: 1px solid #ddd;
+
+border-radius: 3rem;
+text-align: center;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.productt img {
+width: 90%;
+height: 200px;
+object-fit: cover;
+}
+
+.productt h3 {
+margin-top: 10px;
+font-size: 24px;
+}
+
+.productt p {
+width: 300px!important;
+font-size: 16px;
+margin-bottom: 10px;
+}
+
+#input_add_item_carrinho {
+height: 4rem;
+width: 18rem;
+
+background-color: green;
+border: none;
+
+box-shadow:inset 0 3 1rem black;
+
+color: white;
+
+border-radius: 1rem;
+
+}
+#input_add_item_carrinho:hover {
+transform: scale(1.1);
+transition: 500ms;
+}
+#input_add_item_carrinho a {
+color: white;
+}
+/* ----------------- fi-cards_tenism---------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
 
 

@@ -73,6 +73,7 @@
                             
                             <input type = "password" name="txt_senha" maxlength = "50" id = "confirm_password" placeholder = "senha..." required>
                 </label>
+                <input type="hidden" name="txt_totalcarrinho" value="0">
                 <input type="submit" value="Cadastrar" id="inputCadatro" style="margin: 0; width: 20rem; display: flex; justify-content: center; align-items: center;background:black; color: white; padding: 0;" onclick="document.form_cliente.action='cadastrar1.php'">
               </form>
                 

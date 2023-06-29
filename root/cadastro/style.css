@@ -29,6 +29,7 @@ body {
 
   
 }
+@media (min-width: 1024px) {
 body button {
   cursor: pointer;
 }
@@ -603,7 +604,7 @@ footer header li {
 .socialLinks li {
   margin-inline: 0;
 }
-@media (min-width: 1024px) {
+
   
   html {
     min-width: 100vw;
@@ -970,7 +971,7 @@ color: white;
   cursor: pointer;
   
 }
-}
+
   
   /* -----------------BODY---------------- */
 
@@ -1308,3 +1309,23 @@ margin-bottom: 15.5rem
   background: transparent;
   transition:400ms;
 }
+
+}
+
+
+@media (max-width: 800px) {
+  body {
+    background-color: white;
+  }
+  nav {
+      display: none;
+  }
+  
+  header {
+      display: flex;
+      flex-direction: column;
+  }
+  
+  }
+
+

@@ -1,0 +1,12 @@
+
+@media (max-width: 800px) {
+nav {
+    display: none;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+}
+
+}

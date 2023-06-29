@@ -8,7 +8,20 @@
         header('Location: login.php');
     }
     $logado = $_SESSION['email'];
-    $valorTotalProdutos = $_SESSION['preco_total_produtos'];
+    // $valorTotalProdutos = $_SESSION['preco_total_produtos'];
+
+    $query = "SELECT total_carrinho FROM cadastro_usuario WHERE email = '$email_logado'";
+$resultado = mysqli_query($conexao, $query);
+
+if ($resultado && mysqli_num_rows($resultado) > 0) {
+    $row = mysqli_fetch_assoc($resultado);
+    $totalCarrinho = $row['total_carrinho'];
+
+    // Use a variável $totalCarrinho conforme necessário
+    echo "O valor total do carrinho é: " . $totalCarrinho;
+} else {
+    echo "Não foi possível recuperar o valor total do carrinho.";
+}
     $valorFormatado = number_format($valorTotalProdutos, 2, ',', '.');
     $comCifrao = 'R$ ' . $valorFormatado;
 ?>

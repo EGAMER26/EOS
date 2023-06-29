@@ -1,9 +1,8 @@
 <?php
-  session_start();
+session_start();
 
 include 'conexao_banco_eos.php';
 include 'sistema.php';
-
 
 $id_usuario = $_POST['id_usuario'];
 $nome_prod = $_POST['nome_produtoo'];
@@ -14,7 +13,6 @@ $qtd_prod = $_POST['quantidade_produto'];
 $email_logado = $_SESSION['email'];
 
 $preco_final = $preco_prod * $qtd_prod;
-
 
 $sql = "SELECT * FROM produtos WHERE nome_produto='$nome_prod' AND id_usuario = '$email_logado'";
 $resultado = mysqli_query($conexao, $sql);
@@ -37,10 +35,17 @@ if (mysqli_num_rows($resultado) > 0) {
 
         $valorTotalProdutos = $row['preco_total_produtos'];
         $_SESSION['preco_total_produtos'] = $valorTotalProdutos;
-        echo "<script>";
-        echo "alert('Produto cadastrado!');";
-        echo "window.open('http://localhost:8080/cadastro/listagem_carrinho.php', '_self');";
-        echo "</script>";
+
+        // Atualizar o valor total do carrinho na tabela cadastro_usuario
+        $queryUpdate = "UPDATE cadastro_usuario SET total_carrinho = '$valorTotalProdutos' WHERE email = '$email_logado'";
+        if (mysqli_query($conexao, $queryUpdate)) {
+            echo "<script>";
+            echo "alert('Produto cadastrado!');";
+            echo "window.open('http://localhost:8080/cadastro/listagem_carrinho.php', '_self');";
+            echo "</script>";
+        } else {
+            echo "Erro ao atualizar o total do carrinho: " . mysqli_error($conexao);
+        }
     } else {
         echo "Erro ao cadastrar o produto: " . mysqli_error($conexao);
     }

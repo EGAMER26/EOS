@@ -39,7 +39,7 @@ if ($result->num_rows > 0) {
     $stmt->bind_param("isss", $next_id, $nome, $email, $senha);
     if ($stmt->execute()) {
         echo "<script>";
-        echo "alert('Funcionário cadastrado!');";
+        echo "alert('cadastrado com sucesso!');";
         echo "window.open('http://localhost:8080/cadastro/', '_self');";
         echo "</script>";
     } else {

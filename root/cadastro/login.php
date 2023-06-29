@@ -14,7 +14,7 @@
         <img width = "100%" height="100%" src = "assets/backgroundlogin.jpg" alt = "">
           </div>
           <div class = "backgroundcadastro">
-          <img width = "100%" height = "100%" src = "assets/backgroundcadastro.jpg" alt = "">
+          <img width = "100%" height = "100%" src = "assets/backgroundlogin.jpg" alt = "">
           </div>
           <div class = "popup_wrapper">
           
@@ -52,10 +52,10 @@
           <a      href="index.html" class = "closeOpenLogin" > <img width        = "20px" src                             = "assets/closeLogin.png" alt = "close icone"></a>
           
             <div class = "sectionLogin">
-            <h2  style="margin-bottom: 3rem;" class = "slaaa" >Crie uma conta</h2>
+            <h2  style="margin-bottom: 3rem; font-size: 40px;" class = "slaaa" >Crie uma conta</h2>
             <div class = "allLogin">
           
-                <form style="display: flex; flex-direction: column; align-items: center; justify-content: center; align-content: center;" id="formCadastro" name="form_cliente" method="post" autocomplete = "on">
+                <form style="display: flex; gap:3rem; flex-direction: column; align-items: center; justify-content: center; align-content: center;" id="formCadastro" name="form_cliente" method="post" autocomplete = "on">
                 <label for="email">
                   <div  class  = "email">
                             
@@ -73,7 +73,7 @@
                             
                             <input type = "password" name="txt_senha" maxlength = "50" id = "confirm_password" placeholder = "senha..." required>
                 </label>
-                <input type="submit" value="Cadastrar" id="inputCadatro" style="margin: 0; width: 20rem; display: flex; justify-content: center; align-items: center;" onclick="document.form_cliente.action='cadastrar1.php'">
+                <input type="submit" value="Cadastrar" id="inputCadatro" style="margin: 0; width: 20rem; display: flex; justify-content: center; align-items: center;background:black; color: white; padding: 0;" onclick="document.form_cliente.action='cadastrar1.php'">
               </form>
                 
                 </div>
